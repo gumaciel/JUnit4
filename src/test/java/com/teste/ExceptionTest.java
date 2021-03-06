@@ -27,6 +27,7 @@ public class ExceptionTest {
 	public void shouldTestExceptionMessage() throws IndexOutOfBoundsException {
 		List<Object> list = new ArrayList<Object>();
 		
+		
 		thrown.expect(IndexOutOfBoundsException.class);
 		thrown.expectMessage("Index 0 out of bounds for length 0");
 		list.get(0);
